@@ -13,7 +13,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-example-workload-pattern
       endpoint: thecloudexplorers
-      ref: refs/tags/users/wcamargo/new-workload
+      ref: refs/heads/users/wcamargo/new-workload
 
 trigger:
   - users/*
