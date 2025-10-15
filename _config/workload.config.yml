@@ -1,0 +1,10 @@
+# Workload Configuration for Storage Account
+
+workloadSettings:
+  name: storage_account
+  environments:
+    - dev
+    - prod
+  iac:
+    parameterFiles:
+      - iac/workloadTemplate.module.parameters.json

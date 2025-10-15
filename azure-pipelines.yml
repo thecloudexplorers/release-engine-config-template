@@ -1,0 +1,31 @@
+# Azure Pipelines configuration for Storage Account Workload
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- group: 'StorageAccountVariables'
+
+stages:
+- template: /common/pipelines/01-orchestrators/alz.devops.workload.orchestrator.yml@release-engine
+  parameters:
+    workloadSettings:
+      name: storage_account
+      configurationFilePath: _config/workload.config.yml
+      workloadDefinitionRepositoryName: release-engine-example-workload-pattern
+      environments:
+        - dev
+        - prod
+      workloadArtifactsPath: /patterns/storage_account
+      stages:
+        - infrastructure:
+            iac:
+              name: storage_account
+              deploymentScope: Subscription
+              serviceConnection: $(serviceConnection)
+              iacMainFileName: workload.bicep
+              iacParameterFileName: workloadTemplate.module.parameters.json
+              iacParameterFilesDirectory: /iac/
