@@ -12,6 +12,9 @@
     },
     "resourceGroupName": {
       "value": "storage-account-rg"
+    },
+    "storageAccountName": {
+      "value": "tceexample"
     }
   }
 }
