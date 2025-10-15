@@ -6,12 +6,12 @@ resources:
   repositories:
     - repository: release-engine # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
-      name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
+      name: release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
       ref: refs/tags/v1.1.0
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
-      name: thecloudexplorers/release-engine-example-workload-pattern
+      name: release-engine-example-workload-pattern
       endpoint: thecloudexplorers
       ref: refs/heads/users/wcamargo/new-workload
 
