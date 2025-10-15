@@ -1,0 +1,6 @@
+variables:
+  environmentAbbreviation: prd
+  workloadLocation: westeurope
+  environment_stage_abbreviation: prd
+  storageAccountName: "prdstorageaccount"
+  resourceGroupName: "prd-storage-rg"

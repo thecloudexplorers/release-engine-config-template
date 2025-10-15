@@ -1,31 +1,32 @@
 # Azure Pipelines configuration for Storage Account Workload
 
+name: $(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+resources:
+  repositories:
+    - repository: release-engine # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+      type: github
+      name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
+      endpoint: thecloudexplorers
+      ref: refs/tags/v1.1.0
+    - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+      type: github
+      name: thecloudexplorers/release-engine-example-workload-pattern
+      endpoint: thecloudexplorers
+      ref: refs/tags/users/wcamargo/new-workload
+
 trigger:
-- main
+  - users/*
 
-pool:
-  vmImage: 'ubuntu-latest'
+pool: MSHosted-WorkloadsPool
 
-variables:
-- group: 'StorageAccountVariables'
+extends:
+  template: /patterns/example_pattern/workload.yml@workload
 
-stages:
-- template: /common/pipelines/01-orchestrators/alz.devops.workload.orchestrator.yml@release-engine
   parameters:
-    workloadSettings:
-      name: storage_account
-      configurationFilePath: _config/workload.config.yml
-      workloadDefinitionRepositoryName: release-engine-example-workload-pattern
+    platformWorkloadSettings:
+      configurationFilePath: /_config
+      iacParameterFileName: workloadTemplate.module.parameters.json
       environments:
-        - dev
-        - prod
-      workloadArtifactsPath: /patterns/storage_account
-      stages:
-        - infrastructure:
-            iac:
-              name: storage_account
-              deploymentScope: Subscription
-              serviceConnection: $(serviceConnection)
-              iacMainFileName: workload.bicep
-              iacParameterFileName: workloadTemplate.module.parameters.json
-              iacParameterFilesDirectory: /iac/
+        - production
+        - development
