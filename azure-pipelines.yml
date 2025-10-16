@@ -14,9 +14,12 @@ resources:
       endpoint: thecloudexplorers
       ref: refs/tags/v1.0.0
 
-trigger:
-  - main
-  - users/*
+  pipelines:
+    - pipeline: resource-group
+      source: resource-group
+      trigger: true
+
+trigger: none
 
 pool: MSHosted-WorkloadsPool
 
