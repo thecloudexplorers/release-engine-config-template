@@ -41,3 +41,5 @@ variables:
   primary_owner: "owner@thecloudexplorers.com"
   secondary_owner: "secondary@thecloudexplorers.com"
   tertiary_owner: "tertiary@thecloudexplorers.com"
+
+  operations_team: "operations@thecloudexplorers.com"
