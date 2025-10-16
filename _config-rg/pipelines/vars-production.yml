@@ -1,4 +1,0 @@
-variables:
-  environmentAbbreviation: prd
-  workloadLocation: westeurope
-  environment_stage_abbreviation: prd

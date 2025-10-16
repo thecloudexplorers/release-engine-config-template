@@ -1,4 +1,0 @@
-variables:
-  environmentAbbreviation: dev
-  workloadLocation: westeurope
-  environment_stage_abbreviation: dev

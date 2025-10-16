@@ -12,14 +12,11 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-example-workload-pattern
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.0.0
+      ref: users/wcamargo/storage_account_plain
 
-  pipelines:
-    - pipeline: resource-group
-      source: \Tools\release-engine\resource-group
-      trigger: true
-
-trigger: none
+trigger:
+  - main
+  - users/*
 
 pool: MSHosted-WorkloadsPool
 
