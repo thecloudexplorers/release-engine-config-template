@@ -6,7 +6,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.1.1
+      ref: refs/heads/users/wcamargo/environment-sequence
 
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
@@ -27,5 +27,7 @@ extends:
       configurationFilePath: /_config
       iacParameterFileName: /iac/workloadTemplate.module.parameters.json
       environments:
-        - production
-        - development
+        - name: production
+          dependsOn: []
+        - name: development
+          dependsOn: []
