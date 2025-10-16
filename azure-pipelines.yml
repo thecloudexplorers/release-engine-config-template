@@ -30,4 +30,4 @@ extends:
         - name: production
           dependsOn: development
         - name: development
-          dependsOn: build
+          dependsOn: build_storage_account
