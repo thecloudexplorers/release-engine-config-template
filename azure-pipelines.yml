@@ -7,11 +7,15 @@ resources:
       name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
       ref: refs/heads/users/wcamargo/new-workload
+      trigger:
+        - users/*
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
       name: thecloudexplorers/release-engine-example-workload-pattern
       endpoint: thecloudexplorers
       ref: refs/heads/users/wcamargo/new-workload
+      trigger:
+        - users/*
 
 trigger:
   - main
