@@ -16,7 +16,7 @@ resources:
 
   pipelines:
     - pipeline: resource-group
-      source: resource-group
+      source: \Tools\release-engine\resource-group
       trigger: true
 
 trigger: none
