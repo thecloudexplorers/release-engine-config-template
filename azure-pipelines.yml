@@ -29,5 +29,7 @@ extends:
       environments:
         - name: production
           dependsOn: development
+          displayName: Prod
         - name: development
           dependsOn: build
+          displayName: Dev
