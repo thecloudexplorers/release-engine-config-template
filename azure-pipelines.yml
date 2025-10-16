@@ -34,6 +34,6 @@ extends:
         - name: development
           dependsOn: build
           displayName: Dev
-        # - name: test
-        #   dependsOn: development
-        #   displayName: Test
+        - name: test
+          dependsOn: development
+          displayName: Test
