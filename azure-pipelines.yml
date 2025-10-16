@@ -28,12 +28,12 @@ extends:
       configurationFilePath: /_config
       iacParameterFileName: /iac/workloadTemplate.module.parameters.json
       environments:
-        - name: production
-          dependsOn: test
-          displayName: Prod
+        # - name: production
+        #   dependsOn: test
+        #   displayName: Prod
         - name: development
           dependsOn: build
           displayName: Dev
-        - name: test
-          dependsOn: development
-          displayName: Test
+        # - name: test
+        #   dependsOn: development
+        #   displayName: Test
