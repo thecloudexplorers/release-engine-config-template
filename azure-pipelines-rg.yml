@@ -1,0 +1,38 @@
+name: $(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+resources:
+  repositories:
+    - repository: release-engine # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+      type: github
+      name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
+      endpoint: thecloudexplorers
+      ref: refs/heads/users/wcamargo/environment-sequence
+
+    - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+      type: github
+      name: thecloudexplorers/release-engine-example-workload-pattern
+      endpoint: thecloudexplorers
+      ref: refs/tags/v1.0.0
+
+trigger:
+  - main
+  - users/*
+
+pool: MSHosted-WorkloadsPool
+
+extends:
+  template: /patterns/example_pattern/workload.yml@workload
+  parameters:
+    platformWorkloadSettings:
+      configurationFilePath: /_config-rg
+      iacParameterFileName: /iac/workloadTemplate.module.parameters.json
+      environments:
+        - name: development
+          dependsOn: build
+          displayName: Dev
+        # - name: test
+        #   dependsOn: development
+        #   displayName: Test
+        # - name: production
+        #   dependsOn: test
+        #   displayName: Prod
