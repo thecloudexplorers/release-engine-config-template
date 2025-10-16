@@ -28,6 +28,6 @@ extends:
       iacParameterFileName: /iac/workloadTemplate.module.parameters.json
       environments:
         - name: production
-          dependsOn: []
+          dependsOn: development
         - name: development
-          dependsOn: []
+          dependsOn: build
