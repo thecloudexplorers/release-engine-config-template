@@ -1,0 +1,6 @@
+variables:
+  environmentAbbreviation: tst
+  workloadLocation: westeurope
+  environment_stage_abbreviation: tst
+  storageAccountName: "tststorageaccount"
+  resourceGroupName: "tst-storage-rg"
