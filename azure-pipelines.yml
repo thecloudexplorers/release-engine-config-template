@@ -35,6 +35,6 @@ extends:
           dependsOn: build
           displayName: Dev
           primaryEnvironment: true
-        # - name: test
-        #   dependsOn: development
-        #   displayName: Test
+        - name: test
+          dependsOn: development
+          displayName: Test
