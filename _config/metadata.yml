@@ -12,3 +12,4 @@ variables:
   
   workload: multi_stage_pattern
   workload_location: westeurope
+  serviceConnection: ServiceConnection
