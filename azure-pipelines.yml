@@ -12,7 +12,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-example-workload-pattern
       endpoint: thecloudexplorers
-      ref: users/wcamargo/storage_account_plain
+      ref: users/wcamargo/multi-stage-pipeline
 
 trigger:
   - main
