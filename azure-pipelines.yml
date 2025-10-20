@@ -28,14 +28,14 @@ extends:
       configurationFilePath: /_config
       # iacParameterFileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
       iacParameterFileName:
-        - sub_creation:
-            fileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
-        - stamp1:
-            fileName: /iac/workloadTemplate.module.parameters.json
-        - stamp2:
-            fileName: /iac/workloadTemplate.module.parameters.json
-        - stamp3:
-            fileName: /iac/workloadTemplate.module.parameters.json
+        sub_creation:
+          fileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
+        stamp1:
+          fileName: /iac/workloadTemplate.module.parameters.json
+        stamp2:
+          fileName: /iac/workloadTemplate.module.parameters.json
+        stamp3:
+          fileName: /iac/workloadTemplate.module.parameters.json
 
       environments:
         - name: development
