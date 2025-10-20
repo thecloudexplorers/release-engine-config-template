@@ -12,4 +12,7 @@ variables:
   
   workload: multi_stage_pattern
   workload_location: westeurope
-  serviceConnection: ServiceConnection
+
+  # Must be replaced by the Workload dedicated SPN of the lowest environment.
+  # It is used for validate the pipeline run, and will be overridden by the correct SPN of each environment on runtime
+  serviceConnection: ServiceConnection 
