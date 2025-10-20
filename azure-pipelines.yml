@@ -21,12 +21,12 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/storage_account/workload.yml@workload
-  # template: /patterns/multi_stage_pattern/workload.yml@workload
+  # template: /patterns/storage_account/workload.yml@workload
+  template: /patterns/multi_stage_pattern/workload.yml@workload
   parameters:
     platformWorkloadSettings:
       configurationFilePath: /_config
-      iacParameterFileName: /iac/workloadTemplate.module.parameters.json
+      iacParameterFileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
       environments:
         - name: development
           dependsOn: build
