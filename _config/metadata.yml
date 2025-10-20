@@ -10,7 +10,7 @@ variables:
   applicationName: "multi-stage-pattern-example"
   applicationAbbreviation: "msp" # Abbreviation of the Application Name
   
-  
+  workload: multi_stage_pattern
   
   
   # landingZoneType: platform # Represents the type of the Landing Zone Aligned with CAF. Allowed values are [platform/application]
