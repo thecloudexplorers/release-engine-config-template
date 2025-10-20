@@ -11,7 +11,7 @@ variables:
   applicationAbbreviation: "msp" # Abbreviation of the Application Name
   
   workload: multi_stage_pattern
-  
+  workload_location: westeurope
   
   # landingZoneType: platform # Represents the type of the Landing Zone Aligned with CAF. Allowed values are [platform/application]
 
@@ -22,7 +22,7 @@ variables:
   # applicationLandingZone: # APPLICATION-LANDING-ZONE-PLACEHOLDER # If landingZoneType is application, it must be informed according to business areas
 
   # workload: multi_stage_pattern # The purpose of the workload, aligned with which functionality does it aggregate
-  # workload_location: westeurope
+  
 
   # ado_org_name: "thecloudexplorers" # tcsnlps
   # tenant_name: "thecloudexplorers" # TODO: Standardize the pattern, at tcsnlps this is the primary domain, perhaps call it alias to create consistency?
