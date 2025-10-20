@@ -13,6 +13,8 @@ variables:
   workload: multi_stage_pattern
   workload_location: westeurope
   
+  subscriptionId: "81cb5a65-0cea-4807-8a31-eb93dffe39aa"
+
   # landingZoneType: platform # Represents the type of the Landing Zone Aligned with CAF. Allowed values are [platform/application]
 
   # # DESIGN AREAS are used when the landing zone type is PLATFORM
