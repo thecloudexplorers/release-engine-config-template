@@ -22,7 +22,7 @@ pool: MSHosted-WorkloadsPool
 
 variables:
   - name: serviceConnection
-    value: serviceConnection # Must be replaced by the Workload dedicated SPN of the lowest environment . It is used for validate the pipeline run, and will be overriden by the correct SPN of each environment on runtime
+    value: ServiceConnection # Must be replaced by the Workload dedicated SPN of the lowest environment . It is used for validate the pipeline run, and will be overriden by the correct SPN of each environment on runtime
 
 extends:
   template: /patterns/multi_stage_pattern/workload.yml@workload
