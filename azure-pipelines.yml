@@ -29,9 +29,9 @@ extends:
       # iacParameterFileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
       iacParameterFileName:
         sub_creation:
-          fileName: /iac/workloadTemplate.module.parameters.json # TODO: Should be a list for each workload stage
-        stamp1:
-          fileName: /iac/workloadTemplate.module.parameters.json
+          fileName: /connectivity_stamp.parameters.json # TODO: Should be a list for each workload stage
+        connectivity_stamp:
+          fileName: /workloadTemplate.module.parameters.json
         stamp2:
           fileName: /iac/workloadTemplate.module.parameters.json
         stamp3:
