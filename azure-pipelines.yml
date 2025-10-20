@@ -6,7 +6,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
-      ref: refs/heads/users/wcamargo/multi-stage-pipeline
+      ref: refs/tags/v1.3.0
 
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
@@ -21,7 +21,6 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  # template: /patterns/storage_account/workload.yml@workload
   template: /patterns/multi_stage_pattern/workload.yml@workload
   parameters:
     platformWorkloadSettings:
