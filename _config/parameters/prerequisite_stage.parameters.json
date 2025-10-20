@@ -3,18 +3,18 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "resourceLocation": {
-      "value": "#{workload_location}#"
+      "value": "#{landingZoneName}#"
     },
     "tags": {
       "value": {
-        "Environment": "#{environmentAbbreviation}#"
+        "Environment": "dev"
       }
     },
     "resourceGroupName": {
-      "value": "#{applicationAbbreviation}#-#{environmentAbbreviation}#-rg001"
+      "value": "storage-account-rg"
     },
     "storageAccountName": {
-      "value": "#{applicationAbbreviation}##{environmentAbbreviation}#st001"
+      "value": "tceexample"
     }
   }
 }
