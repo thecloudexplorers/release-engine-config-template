@@ -3,18 +3,18 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "resourceLocation": {
-      "value": "westeurope"
+      "value": "#{workload_location}#"
     },
     "tags": {
       "value": {
-        "Environment": "dev"
+        "Environment": "#{environmentAbbreviation}#"
       }
     },
     "resourceGroupName": {
-      "value": "storage-account-rg"
+      "value": "#{applicationAbbreviation}#-#{environmentAbbreviation}#-rg001"
     },
     "storageAccountName": {
-      "value": "tceexample"
+      "value": "#{applicationAbbreviation}##{environmentAbbreviation}#st001"
     }
   }
 }
