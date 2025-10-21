@@ -233,17 +233,17 @@ variables:
 #### Step 1: Clone Template
 ```bash
 # Clone this template repository
-git clone https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
+git clone https://github.com/thecloudexplorers/release-engine-config-template.git
 
 # Rename directory for your workload
-mv release-engine-storage-account-example-configuration release-engine-<workload-name>-configuration
+mv release-engine-config-template release-engine-<workload-name>-configuration
 cd release-engine-<workload-name>-configuration
 ```
 
 #### Step 2: Configure Upstream
 ```bash
 # Add upstream for future updates
-git remote add upstream https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
+git remote add upstream https://github.com/thecloudexplorers/release-engine-config-template.git
 
 # Update origin to your repository
 git remote set-url origin https://github.com/<your-org>/release-engine-<workload-name>-configuration.git
@@ -279,8 +279,8 @@ git remote set-url origin https://github.com/<your-org>/release-engine-<workload
 #### For Each Workload
 1. **Clone Template Repository**
    ```bash
-   git clone https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
-   cd release-engine-storage-account-example-configuration
+   git clone https://github.com/thecloudexplorers/release-engine-config-template.git
+   cd release-engine-config-template
    
    # Rename for your workload
    # Example: release-engine-webapp-frontend-configuration
@@ -288,7 +288,7 @@ git remote set-url origin https://github.com/<your-org>/release-engine-<workload
 
 2. **Set Up Upstream Remote**
    ```bash
-   git remote add upstream https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
+   git remote add upstream https://github.com/thecloudexplorers/release-engine-config-template.git
    git remote -v
    ```
 

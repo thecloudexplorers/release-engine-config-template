@@ -10,7 +10,7 @@ resources:
 
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
-      name: thecloudexplorers/release-engine-example-workload-pattern
+      name: thecloudexplorers/release-engine-pattern-template
       endpoint: thecloudexplorers
       ref: refs/tags/v1.1.0
 
