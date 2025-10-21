@@ -47,17 +47,17 @@ Configuration Layer (THIS REPO) → Abstraction Layer (Patterns) → Core Layer 
 ### Step 1: Clone This Template
 ```bash
 # Clone this template repository
-git clone https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
+git clone https://github.com/thecloudexplorers/release-engine-config-template.git
 
 # Rename for your specific workload
-mv release-engine-storage-account-example-configuration my-workload-configuration
+mv release-engine-config-template my-workload-configuration
 cd my-workload-configuration
 ```
 
 ### Step 2: Set Up Upstream Tracking
 ```bash
 # Add upstream remote for future updates
-git remote add upstream https://github.com/thecloudexplorers/release-engine-storage-account-example-configuration.git
+git remote add upstream https://github.com/thecloudexplorers/release-engine-config-template.git
 
 # Set new origin (your workload repository)
 git remote set-url origin https://github.com/myorg/my-workload-configuration.git
