@@ -83,9 +83,9 @@ name: $(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 resources:
   repositories:
-    - repository: release-engine # DO NOT CHANGE ALIAS
+    - repository: release-engine-core # DO NOT CHANGE ALIAS
       type: github
-      name: thecloudexplorers/release-engine
+      name: thecloudexplorers/release-engine-core
       endpoint: <your-github-endpoint>
       ref: refs/heads/main
 
@@ -458,9 +458,9 @@ foreach ($file in $paramFiles) {
 - **Documentation**: Complete examples and templates
 
 ### Related Repositories
-- **[Release Engine Core](https://github.com/thecloudexplorers/release-engine)**: Core pipeline orchestration framework
+- **[Release Engine Core](https://github.com/thecloudexplorers/release-engine-core)**: Core pipeline orchestration framework
 - **[Workload Patterns](https://github.com/thecloudexplorers/release-engine-example-workload-pattern)**: Pattern template repository
-- **[Architecture Documentation](https://github.com/thecloudexplorers/release-engine/blob/main/docs/Release-Engine-Solution-Architecture.md)**
+- **[Architecture Documentation](https://github.com/thecloudexplorers/release-engine-core/blob/main/docs/Release-Engine-Solution-Architecture.md)**
 
 ### External Resources
 - **[Azure DevOps YAML Schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema)**
