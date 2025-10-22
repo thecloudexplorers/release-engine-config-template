@@ -4,7 +4,7 @@ resources:
   repositories:
     - repository: release-engine # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
-      name: thecloudexplorers/release-engine # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
+      name: thecloudexplorers/release-engine-core # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
       ref: refs/heads/users/wcamargo/renaming-release-engine
 
