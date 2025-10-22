@@ -70,9 +70,9 @@ name: $(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 resources:
   repositories:
-    - repository: release-engine # ALIAS - DO NOT CHANGE
+    - repository: release-engine-core # ALIAS - DO NOT CHANGE
       type: github
-      name: thecloudexplorers/release-engine
+      name: thecloudexplorers/release-engine-core
       endpoint: thecloudexplorers
       ref: refs/heads/main # Use specific branch/tag for stability
 
@@ -113,7 +113,7 @@ extends:
 #### Critical Configuration Points
 
 1. **Repository References**
-   - **DO NOT change repository aliases** (`release-engine`, `workload`)
+   - **DO NOT change repository aliases** (`release-engine-core`, `workload`)
    - **Update repository names** to point to your organization's forks
    - **Pin to specific branches/tags** for production stability
    - **Use appropriate GitHub service connections**
