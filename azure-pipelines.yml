@@ -12,7 +12,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-pattern-template
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.1.0
+      ref: refs/heads/users/wcamargo/renaming-release-engine
 
 trigger:
   - main
