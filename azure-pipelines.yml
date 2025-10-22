@@ -2,7 +2,7 @@ name: $(Build.DefinitionName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 resources:
   repositories:
-    - repository: release-engine # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+    - repository: release-engine-core # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
       name: thecloudexplorers/release-engine-core # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
