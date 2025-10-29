@@ -6,7 +6,7 @@
       "value": "#{workload_location}#"
     },
     "storageAccountName": {
-      "value": "#{applicationAbbreviation}##{environmentAbbreviation}#st001"
+      "value": "#{applicationAbbreviation}##{environmentAbbreviation}#st002"
     }
   }
 }
