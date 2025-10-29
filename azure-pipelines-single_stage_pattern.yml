@@ -12,7 +12,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-pattern-template
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.2.0
+      ref: refs/heads/users/wcamargo/update-patterns-examples
 
 trigger:
   - main
@@ -21,7 +21,7 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/multi_stage_pattern/workload.yml@workload
+  template: /patterns/single_stage_pattern/workload.yml@workload
   parameters:
     platformWorkloadSettings:
       configurationFilePath: /_config
@@ -31,9 +31,9 @@ extends:
           dependsOn: build
           displayName: Dev
           primaryEnvironment: true
-        - name: test
-          dependsOn: development
-          displayName: Test
-        - name: production
-          dependsOn: test
-          displayName: Prod
+        # - name: test
+        #   dependsOn: development
+        #   displayName: Test
+        # - name: production
+        #   dependsOn: test
+        #   displayName: Prod
