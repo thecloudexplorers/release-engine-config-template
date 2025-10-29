@@ -29,8 +29,7 @@ extends:
       environments:
         - name: development
           dependsOn: build
-          displayName: Dev
-          primaryEnvironment: true
+          displayName: Dev          
           afterBuild: true
         - name: test
           dependsOn: development
