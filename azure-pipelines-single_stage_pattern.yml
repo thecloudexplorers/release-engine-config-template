@@ -6,7 +6,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-core # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.5.0
+      ref: refs/heads/users/wcamargo/update-patterns-examples
 
     - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
       type: github
