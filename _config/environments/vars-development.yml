@@ -4,4 +4,4 @@ variables:
   
   # Required for resource group scoped deployments
   # subscriptionId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-  resourceGroupName: '#{applicationAbbreviation}#-#{environmentAbbreviation}#-rg001'
+  resourceGroupName: '$(applicationAbbreviation)-$(environmentAbbreviation)-rg001'
