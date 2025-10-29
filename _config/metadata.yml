@@ -8,7 +8,7 @@ variables:
 
   # Name of the Application deployed in the Landing Zone
   applicationName: "multi-stage-pattern-example"
-  applicationAbbreviation: "msg" # Abbreviation of the Application Name
+  applicationAbbreviation: "msg1" # Abbreviation of the Application Name
   
   workload: multi_stage_pattern
   workload_location: westeurope
