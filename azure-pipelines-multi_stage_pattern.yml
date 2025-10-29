@@ -30,7 +30,7 @@ extends:
         - name: development
           dependsOn: build
           displayName: Dev
-          primaryEnvironment: true
+          primaryEnvironment: true          
         - name: test
           dependsOn: development
           displayName: Test
