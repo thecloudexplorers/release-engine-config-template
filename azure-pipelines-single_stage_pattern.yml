@@ -8,11 +8,11 @@ resources:
       endpoint: thecloudexplorers
       ref: refs/heads/users/wcamargo/resource_group_scope_pattern
 
-    # - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
-    #   type: github
-    #   name: thecloudexplorers/release-engine-pattern-template
-    #   endpoint: thecloudexplorers
-    #   ref: refs/tags/v1.3.0
+    - repository: workload # REPOSITORY ALIAS ###  MUST NOT  ### BE CHANGED
+      type: github
+      name: thecloudexplorers/release-engine-pattern-template
+      endpoint: thecloudexplorers
+      ref: refs/tags/v1.3.0
 
 trigger:
   - main
@@ -21,7 +21,7 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/templates/iac/resource_group_scope_pattern/workload.yml@release-engine-core
+  template: /patterns/templates/iac/resource_group_scope_pattern/workload.yml@workload
   parameters:
     platformWorkloadSettings:
       configurationFilePath: /_config
