@@ -21,7 +21,7 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/multi_stage_pattern/workload.yml@workload
+  template: /patterns/multi_stage_pattern/deployment-pattern.yml@workload
   parameters:
     deploymentSettings:
       configurationFilePath: /_config
