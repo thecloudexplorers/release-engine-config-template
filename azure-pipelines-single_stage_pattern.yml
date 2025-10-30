@@ -25,7 +25,7 @@ extends:
   template: /patterns/resource_group_scope_pattern/workload.yml@workload
   
   parameters:
-    platformWorkloadSettings:
+    deploymentSettings:
       configurationFilePath: /_config
 
       environments:
