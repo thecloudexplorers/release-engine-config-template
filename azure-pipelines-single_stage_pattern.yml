@@ -21,7 +21,7 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/resource_group_scope_pattern/workload.yml@workload
+  template: /patterns/templates/iac/resource_group_scope_pattern/workload.yml@release-engine-core
   parameters:
     platformWorkloadSettings:
       configurationFilePath: /_config
