@@ -92,7 +92,7 @@ pool: <your-agent-pool> # Replace with your Azure DevOps agent pool
 extends:
   template: /patterns/<pattern_name>/workload.yml@workload
   parameters:
-    platformWorkloadSettings:
+    deploymentSettings:
       configurationFilePath: /_config
       # Optional: Override parameter file name
       iacParameterFileName: /parameters/<specific_parameters>.json

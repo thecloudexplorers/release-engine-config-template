@@ -105,7 +105,7 @@ pool: <your-agent-pool>
 extends:
   template: /patterns/<pattern_name>/workload.yml@workload
   parameters:
-    platformWorkloadSettings:
+    deploymentSettings:
       configurationFilePath: /_config
       environments:
         - name: development
@@ -370,7 +370,7 @@ Some workloads may require multiple patterns:
 extends:
   template: /patterns/multi_stage_pattern/workload.yml@workload
   parameters:
-    platformWorkloadSettings:
+    deploymentSettings:
       configurationFilePath: /_config
       # Use specific parameter file for dependent stages
       iacParameterFileName: /parameters/multi_stage.dependent2.parameters.json
