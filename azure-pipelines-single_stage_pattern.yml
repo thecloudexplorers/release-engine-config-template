@@ -12,7 +12,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-pattern-template
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.3.0
+      ref: refs/heads/users/wcamargo/integrated-patterns      
 
 trigger:
   - main
