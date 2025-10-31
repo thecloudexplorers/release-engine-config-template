@@ -15,7 +15,7 @@ trigger:
 pool: MSHosted-WorkloadsPool
 
 extends:
-  template: /patterns/resource_group_scope_pattern/deployment-pattern.yml@release-engine-core
+  template: /patterns/templates/iac/resource_group_scope_pattern/deployment-pattern.yml@release-engine-core
   
   parameters:
     deploymentSettings:
