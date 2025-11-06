@@ -6,7 +6,7 @@ resources:
       type: github
       name: thecloudexplorers/release-engine-core # RELEASE ENGINE REPOSITORY ###  MUST NOT  ### BE CHANGED
       endpoint: thecloudexplorers
-      ref: refs/tags/v1.8.0
+      ref: refs/heads/users/wcamargo/subscription-scope-tests
 
 trigger:
   - main
@@ -16,7 +16,7 @@ pool: MSHosted-WorkloadsPool
 
 extends:
   template: /patterns/templates/iac/resource_group_scope_pattern/deployment-pattern.yml@release-engine-core
-  
+
   parameters:
     deploymentSettings:
       configurationFilePath: /_config
@@ -25,7 +25,7 @@ extends:
         - name: development
           dependsOn: build
           displayName: Dev
-          afterBuild: true          
+          afterBuild: true
         - name: test
           dependsOn: development
           displayName: Test
