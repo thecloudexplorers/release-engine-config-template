@@ -1,18 +1,18 @@
 variables:
   
-  landingZoneName: "patterns" # Name of the Landing Zone
+  landingZoneName: "release-engine-core" # Name of the Landing Zone
 
   # Abbreviation of the landing zone
   # Allowed value: [a-z][0-9]{3}
-  landingZoneAbbreviation: "ptn" # Abbreviation of the Landing Zone Name
+  landingZoneAbbreviation: "rec" # Abbreviation of the Landing Zone Name
 
   # Name of the Application deployed in the Landing Zone
-  applicationName: "resource_group_scope_pattern"
-  applicationAbbreviation: "msg1" # Abbreviation of the Application Name
+  applicationName: "test-internal-pattern-configuration"
+  applicationAbbreviation: "tstintcfg" # Abbreviation of the Application Name
   
-  deploymentPattern: multi_stage_pattern
+  deploymentPattern: subscription_scope_pattern_test
   deploymentLocation: westeurope
 
-  # Must be replaced by the Workload dedicated SPN of the lowest environment.
+  # Must be replaced by the dedicated SPN of the lowest environment.
   # It is used for validate the pipeline run, and will be overridden by the correct SPN of each environment on runtime
   serviceConnection: IacServiceConnection 
