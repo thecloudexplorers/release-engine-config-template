@@ -1,14 +1,14 @@
 variables:
   
-  landingZoneName: "release-engine-core" # Name of the Landing Zone
+  landingZoneName: "release-engine-templates" # Name of the Landing Zone
 
   # Abbreviation of the landing zone
   # Allowed value: [a-z][0-9]{3}
-  landingZoneAbbreviation: "rec" # Abbreviation of the Landing Zone Name
+  landingZoneAbbreviation: "tpl" # Abbreviation of the Landing Zone Name
 
   # Name of the Application deployed in the Landing Zone
-  applicationName: "test-internal-pattern-configuration"
-  applicationAbbreviation: "tstintcfg" # Abbreviation of the Application Name
+  applicationName: "template-internal-pattern-configuration"
+  applicationAbbreviation: "ipc" # Abbreviation of the Application Name
   
   deploymentPattern: subscription_scope_pattern_test
   deploymentLocation: westeurope
