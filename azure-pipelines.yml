@@ -20,6 +20,7 @@ extends:
   parameters:
     deploymentSettings:
       configurationFilePath: /_config
+      isTestPipeline: false
 
       environments:
         - name: development

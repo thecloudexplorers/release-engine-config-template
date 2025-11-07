@@ -7,7 +7,7 @@ variables:
   landingZoneAbbreviation: "ptn" # Abbreviation of the Landing Zone Name
 
   # Name of the Application deployed in the Landing Zone
-  applicationName: "multi-stage-pattern-example"
+  applicationName: "resource_group_scope_pattern"
   applicationAbbreviation: "msg1" # Abbreviation of the Application Name
   
   deploymentPattern: multi_stage_pattern
